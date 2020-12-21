@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPORT</title>
+</head>
+<body>
+    <h1>프로세스 리포트</h1>
+            <h2> BackEnd에서 Server를 잡을 때 src 라는 폴더에 app.js라는 파일을 만들어서 Server를 만든다.</h2>
+            <br/>
+
+            <h2> Server에서 app에게 사용자가 "/graphql" 일 때 미들웨어로 cors() 실행하고, bodyPaser 실행하고 그다음 graphqlHTTP를 실행할건데 graphql폴더 안에 있는 schema를 가지고 실행한다. </h2>
+            <br/>
+
+            <h2> BackEnd에서 GraphQL사용하여 MongoDB를 제어 하고있다.</h2>
+            <br/>
+
+            <h2>GraphQL은 REST API (Representational State Transfer)를 감싸기 위하여 Query Language 를 BackEnd와 DataBase를 연결해주는 ORM (Object-Relational Mapping)이 있다.</h2>
+            <br/>
+
+            <h2>ORM , ODM 은 DB에 CRUD를 도와주는 Platform이다.</h2>
+            <br/>
+
+            <h2>FrontEnd와 BackEnd이 서로 연결되어있지 않은 상태에서 BackEnd (Node.js) 가 MongoDB에서 데이터들을 뽑아온다.</h2>
+            <br/>
+            
+            <h2>그 후 FrontEnd (React) 에서 Apollo 사용하여 연동시킨다.</h2>
+            <br/>
+
+            <h2>Front의 React 안에 있는 App.js가 모든 컴포넌트들을 감싸고 있고 Router가 그 다음으로 모든 파일들을 감싸고 있으며 Router안에 Apollo가 React의 모든 것들을 Apollo(ApolloProvider)로 감싸준다.</h2>
+            <br/>
+
+            <h2>이렇게 Apollo에서 자신이 적어놓은 GraphQL로 신호를 req(Requset)로 보내준다.</h2>
+            <br/>
+
+            <h2>req(Requset)로 보낸 후 BackEnd에서 return값을 res(Response)로 받아온다.</h2>
+            <br/>
+
+            <h2>BackEnd에서 res로 받아온 데이터들을 Front의 React Presenter.jsx 라는 파일에서 return을 하여 사용자에게 화면을 보여준다.</h2>
+            <br/>
+</body>
+</html>
