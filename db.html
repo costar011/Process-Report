@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DB</title>
 </head>
+
 <body>
-    <h1>데이터 레포트</h1>
-       
+    <h1>데이터베이스 레포트</h1>
+
+        <h2>옵티마이저 : 쿼리작성 순서도</h2>
+
+        <h2>
+                SELECT    A.ENAME,
+                    A.SAL,
+                    B.DNAME             -- 2
+            FROM    emp    A
+            INNER
+            JOIN    dept    B
+            ON    A.DEPTNO = B.DEPTNO   -- 1
+            ORDER    BY    A.EMPNO;     -- 3
+
+        </h2>
         
 </body>
 </html>
